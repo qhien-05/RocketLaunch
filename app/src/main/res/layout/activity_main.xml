@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/launch_area"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_space"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+
+    <!-- ================================================= -->
+    <!-- MAIN INTERFACE                                    -->
+    <!-- ================================================= -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!-- HEADER -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="18dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.08"
+                android:text="ROCKET LAUNCH"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Mission Control"
+                android:textColor="#AFC6FF"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+
+        <!-- STATUS CARD -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/bg_status_card"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.12"
+                android:text="STATUS"
+                android:textColor="#9EB5FF"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Rocket ready to launch!"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- ================================================= -->
+        <!-- SPACE AREA                                        -->
+        <!-- ================================================= -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+
+            <!-- STAR 1 -->
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_gravity="top|start"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="45dp"
+                android:background="@drawable/star_dot" />
+
+
+            <!-- STAR 2 -->
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="85dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/star_dot" />
+
+
+            <!-- STAR 3 -->
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="68dp"
+                android:background="@drawable/star_dot" />
+
+
+            <!-- STAR 4 -->
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginEnd="62dp"
+                android:background="@drawable/star_dot" />
+
+
+            <!-- STAR 5 -->
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="58dp"
+                android:layout_marginBottom="110dp"
+                android:background="@drawable/star_dot" />
+
+
+            <!-- STAR 6 -->
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="140dp"
+                android:background="@drawable/star_dot" />
+
+
+            <!-- STAR 7 -->
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="3dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="100dp"
+                android:background="@drawable/star_dot" />
+
+
+            <!-- LAUNCH PAD -->
+
+            <View
+                android:layout_width="175dp"
+                android:layout_height="11dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/bg_launch_pad" />
+
+        </FrameLayout>
+
+
+        <!-- ================================================= -->
+        <!-- BUTTONS                                           -->
+        <!-- ================================================= -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="22dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="#536DFE"
+                android:text="START"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#607D8B"
+                android:text="RESET"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- ================================================= -->
+    <!-- SMOKE PARTICLE LAYER                              -->
+    <!-- Full screen so smoke can follow rocket everywhere -->
+    <!-- ================================================= -->
+
+    <com.example.rocketlaunch.SmokeView
+        android:id="@+id/smoke_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false" />
+
+
+    <!-- ================================================= -->
+    <!-- ROCKET                                             -->
+    <!-- Full-screen overlay                                -->
+    <!-- ================================================= -->
+
+    <ImageView
+        android:id="@+id/img_rocket"
+        android:layout_width="125dp"
+        android:layout_height="205dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="105dp"
+        android:clickable="false"
+        android:contentDescription="Rocket"
+        android:focusable="false"
+        android:scaleType="fitCenter"
+        android:src="@drawable/rocket_1" />
+
+</FrameLayout>

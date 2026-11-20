@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style
+        name="Theme.RocketLaunch"
+        parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="colorPrimary">
+            #3F51B5
+        </item>
+
+        <item name="colorSecondary">
+            #3F51B5
+        </item>
+
+        <item name="android:statusBarColor">
+            #101827
+        </item>
+
+        <item name="android:navigationBarColor">
+            #101827
+        </item>
+
+        <item name="android:windowLightStatusBar">
+            false
+        </item>
+
+    </style>
+
+</resources>
